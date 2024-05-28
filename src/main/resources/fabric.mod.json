@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "addies-random-stuff",
+	"version": "${version}",
+	"name": "addies random stuff",
+	"description": "This is my first coded mod so no hate",
+	"authors": [
+		"Addison"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/addies-random-stuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.addie.randomstuff.AddiesRandomStuff"
+		],
+		"client": [
+			"net.addie.randomstuff.AddiesRandomStuffClient"
+		],
+		"fabric-datagen": [
+			"net.addie.randomstuff.AddiesRandomStuffDataGenerator"
+		]
+	},
+	"mixins": [
+		"addies-random-stuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
